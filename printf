@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdarg.h>
+#include <stdlib.h>
 void _numbers(unsigned int n);
 /**
 * print_number - check code
