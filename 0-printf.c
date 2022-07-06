@@ -20,10 +20,10 @@ int _printf(const char *format, ...)
 					printf("%c", va_arg(all, int));
 					break;
 				case 's':
-					printf("%s", va_arg(all, int));
+					printf("%d", va_arg(all, int));
 					break;
 				case '%':
-					printf("%%", va_arg(all, int));
+					printf("%%");
 					break;
 			}
 			i++;
