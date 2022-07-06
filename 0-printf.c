@@ -7,7 +7,8 @@
 int _printf(const char *format, ...)
 {
 	va_list all;
-	unsigned int i = 0;
+	int i = 0;
+	char *s;
 
 	va_start(all, format);
 	if (format)
@@ -23,7 +24,8 @@ int _printf(const char *format, ...)
 					printf("%d", va_arg(all, int));
 					break;
 				case '%':
-					printf("%d", va_arg(all, int));
+					s = (va_arg(all, char *));
+					(s == NULL ? printf("(nil)") : printf("%s", s));
 					break;
 			}
 			i++;
@@ -32,5 +34,5 @@ int _printf(const char *format, ...)
 	}
 	va_end(all);
 	printf("\n");
-	return (format);
+	return ('\0');
 }
