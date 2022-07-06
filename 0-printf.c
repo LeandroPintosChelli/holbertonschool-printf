@@ -12,7 +12,6 @@ int _printf(const char *format, ...)
 	va_start(all, format);
 	if (format)
 	{
-		leng = strlen(format);
 		while (format[i])
 		{
 			switch (format[i])
