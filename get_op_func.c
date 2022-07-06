@@ -3,19 +3,15 @@
 #include <stdio.h>
 #include <stddef.h>
 #include <string.h>
-int (*get_op_func(char *s))(va_list all)
-{
-	op_t ops[] = {
-	{"s", pr_str},
-	{"c", pr_char},
-	{"%", pr_per},
-	{NULL, NULL}
-	};
-
 int _printf(const char *format, ...)
 {
+	op_t ops[] = {
+		{'s', pr_str},
+		{'c', pr_char},
+		{'\n', NULL}
+	};
 	int i;
-	int j;
+	int j = 0;
 	int counter = 0;
 	va_list all;
 
@@ -23,37 +19,29 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(all, format);
-	while (format[i])
+	while (format[i]) /**condicion para que mientras haya algo en format(recorre)*/
 	{
 		if (format[i] == '%')
 		{
-			while (ops[j].op[0])
+			if (format[i + 1] == '%')
 			{
-				if ((ops[j].op[0]) == (format[i + 1]))
+				_putchar('%');
+				counter += 1;
+			}
+			while (ops[j].op) /**chequea las posc de la estr y recorre*/
+			{
+				if (ops[j].op == format[i + 1])
 				{
-					counter +=
+					counter += ops[j].f(all);
+					i += 2; 
 				}
 			}
 		}
 		else
 		{
-			_putchar
+			_putchar(format[i]);
 		}
 	}
-
-
-/**	i = 0;
-	while (ops[i].pr != NULL)
-	{
-		if ((ops[i].pr[0]) == (format[i + 1]))
-		{
-			return (ops[i].f);
-		}
-		i++;
-	}
-	return (NULL);
-}*/
-
-
-
-
+	va_end(all);
+	return (counter);
+}
