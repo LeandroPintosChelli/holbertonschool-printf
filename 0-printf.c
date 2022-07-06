@@ -8,7 +8,6 @@ int _printf(const char *format, ...)
 {
 	va_list all;
 	int leng, i = 0;
-	char *f;
 
 	va_start(all, format);
 	if (format)
@@ -32,5 +31,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(all);
-	printf('\n');
+	printf("\n");
 }
