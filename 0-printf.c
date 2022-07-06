@@ -7,7 +7,7 @@
 int _printf(const char *format, ...)
 {
 	va_list all;
-	int leng, i = 0;
+	int i = 0;
 
 	va_start(all, format);
 	if (format)
