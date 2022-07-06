@@ -17,13 +17,13 @@ int _printf(const char *format, ...)
 			switch (format[i])
 			{
 				case 'c':
-					printf("%c", va_arg(all, char));
+					printf("%c", va_arg(all, int));
 					break;
 				case 's':
-					printf("%s", va_arg(all, char));
+					printf("%s", va_arg(all, int));
 					break;
 				case '%':
-					printf("%%", va_arg(all, char));
+					printf("%%", va_arg(all, int));
 					break;
 			}
 			i++;
