@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
+#include <string.h>
 
 int _printf(const char *format, ...)
 {
@@ -17,13 +18,13 @@ int _printf(const char *format, ...)
 		{
 			switch (format[i])
 			{
-				case 'c';
+				case 'c':
 					printf("%c", va_arg(all, char));
 					break;
-				case 's';
+				case 's':
 					printf("%s", va_arg(all, char));
 					break;
-				case '%';
+				case '%':
 					printf("%%", va_arg(all, char));
 					break;
 			}
