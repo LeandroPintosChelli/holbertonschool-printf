@@ -45,9 +45,9 @@ int pr_char(va_list all)
 * printper - print
 * @all: va list
 */
-int printper(va_list all)
+/**int printper(va_list all)
 {
 	_putchar(va_arg(all, int));
 	return (0);
-}
+}*/
 
