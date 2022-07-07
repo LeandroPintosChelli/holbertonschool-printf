@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 			if (format[i + 1] != '%')
 				counter += _while(all, format[i + 1]);
 			else
-				counter += _putchar('%'), i++;
+				counter += _putchar('%');
 			i++;
 		}
 		else
