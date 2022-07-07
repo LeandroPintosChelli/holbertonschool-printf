@@ -9,7 +9,7 @@ int _printf(const char *format, ...)
 	op_t ops[] = {
 		{"c", pr_char},
 		{"s", pr_str},
-		{"%", printper},
+		{"%", printper}
 	};
 	int i;
 	int j;

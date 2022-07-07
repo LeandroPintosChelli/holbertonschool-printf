@@ -11,25 +11,25 @@ int prin(void)
 */
 int pr_str(va_list all)
 {
-	int q;
-	char *t, w[] = "(null)";
+	int cont;
+	char *string, array[] = "(null)";
 
-	t = va_arg(all, char *);
-	if (w == NULL)
+	string = va_arg(all, char *);
+	if (array == NULL)
 	{
-		for (q = 0; w[q]; q++)
+		for (cont = 0; array[cont]; cont++)
 		{
-			_putchar(w[q]);
+			_putchar(array[cont]);
 		}
 	}
 	else
 	{
-		for (q = 0; t[q]; q++)
+		for (cont = 0; string[cont]; cont++)
 		{
-			_putchar(t[q]);
+			_putchar(string[cont]);
 		}
 	}
-		return (q);
+		return (cont);
 }
 /**
 * pr_char - print char
@@ -41,3 +41,13 @@ int pr_char(va_list all)
 	_putchar(va_arg(all, int));
 	return (1);
 }
+/**
+* printper - print
+* @all: va list
+*/
+int printper(va_list all)
+{
+	_putchar(va_arg(all, char *)
+	return(1);
+}
+
