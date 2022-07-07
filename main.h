@@ -10,6 +10,7 @@ typedef struct op
 	char op;
 	int (*f)(va_list all);
 } op_t;
+int main();
 int pr_str(va_list all);
 int pr_char(va_list all);
 int _printf(const char *format, ...);
