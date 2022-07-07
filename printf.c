@@ -31,7 +31,6 @@ int _printf(const char *format, ...)
 		}
 		else if (format[i] == '%')
 		{
-			i++;
 			while (j < 3) /**chequea las posc de la estr y recorre*/
 			{
 				if (*ops[j].op == format[i + 1])
