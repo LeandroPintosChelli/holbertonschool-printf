@@ -40,14 +40,14 @@ int _printf(const char *format, ...)
 					counter += ops[j].f(all);
 					break;
 				}
-				j++;
+				i++;
 			}
 			if (j == 3)
 			{
 				_putchar(format[i]);
 				counter++;
-				i++;
-			}
+			}	
+			i++;	
 		}
 		else
 		{
