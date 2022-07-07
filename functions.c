@@ -1,9 +1,4 @@
 #include "main.h"
-int prin(void)
-{
-	printf("Hello");
-	return (0);
-}
 /**
 * pr_str - print string
 * @all: variadic list
@@ -15,12 +10,13 @@ int pr_str(va_list all)
 	char *string, array[] = "(null)";
 
 	string = va_arg(all, char *);
-	if (array == NULL)
+	if (string == NULL)
 	{
 		for (cont = 0; array[cont]; cont++)
 		{
 			_putchar(array[cont]);
 		}
+		return (cont);
 	}
 	else
 	{
@@ -41,13 +37,3 @@ int pr_char(va_list all)
 	_putchar(va_arg(all, int));
 	return (1);
 }
-/**
-* printper - print
-* @all: va list
-*/
-/**int printper(va_list all)
-{
-	_putchar(va_arg(all, int));
-	return (0);
-}*/
-
