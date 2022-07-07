@@ -1,15 +1,25 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <stddef.h>
-#include <string.h>
+int pr_str(va_list all)
+{
+	_putchar(va_arg(all, int));
+	return (1);
+}
+int pr_char(va_list all)
+{
+	_putchar(va_arg(all, int));
+	return (1);
+}
+/**
+* _printf - printf
+* @format: print
+*/
 int _printf(const char *format, ...)
 {
 	op_t ops[] = {
 		{'s', pr_str},
 		{'c', pr_char},
 		{'\n', NULL}
-	};
+		};
 	int i;
 	int j = 0;
 	int counter = 0;
