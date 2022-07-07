@@ -36,8 +36,8 @@ int _printf(const char *format, ...)
 			{
 				if (*ops[j].op == format[i + 1])
 				{
-					counter += ops[j].f(all);
 					i++;
+					counter += ops[j].f(all);
 					break;
 				}
 				j++;

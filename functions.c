@@ -48,6 +48,6 @@ int pr_char(va_list all)
 int printper(va_list all)
 {
 	_putchar(va_arg(all, int));
-	return(0);
+	return (0);
 }
 
