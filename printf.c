@@ -1,14 +1,4 @@
 #include "main.h"
-int pr_str(va_list all)
-{
-	_putchar(va_arg(all, int));
-	return (1);
-}
-int pr_char(va_list all)
-{
-	_putchar(va_arg(all, int));
-	return (1);
-}
 /**
 * _printf - printf
 * @format: print

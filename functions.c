@@ -1,4 +1,9 @@
 #include "main.h"
+int prin()
+{
+	printf("Hello");
+	return (0);
+}
 /**
 * pr_str - print string
 * @all: variadic list
