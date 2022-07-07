@@ -39,7 +39,7 @@ int pr_str(va_list all)
 int pr_char(va_list all)
 {
 	_putchar(va_arg(all, int));
-	return (1);
+	return (0);
 }
 /**
 * printper - print
@@ -48,6 +48,6 @@ int pr_char(va_list all)
 int printper(va_list all)
 {
 	_putchar(va_arg(all, int));
-	return(1);
+	return(0);
 }
 
