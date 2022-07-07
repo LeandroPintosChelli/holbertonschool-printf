@@ -38,15 +38,8 @@ int pr_str(va_list all)
 */
 int pr_char(va_list all)
 {
-	int contr;
-	char *ch;
-
-	ch = va_arg(all, int)
-	if (contr == NULL)
-	{
-		_putchar(ch[contr]);
-	}
-	return (0);
+	_putchar(va_arg(all, int));
+	return (1);
 }
 /**
 * printper - print
