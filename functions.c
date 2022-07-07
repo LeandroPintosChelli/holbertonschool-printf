@@ -22,5 +22,6 @@ int pr_str(va_list all)
 int pr_char(va_list all)
 {
 	_putchar(va_arg(all, int));
+	_putchar('s');
 	return (1);
 }
