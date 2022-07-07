@@ -7,10 +7,9 @@
 int _printf(const char *format, ...)
 {
 	op_t ops[] = {
-		{'s', pr_str},
-		{'c', pr_char},
-		{'\n', NULL}
-		};
+		{"s", pr_str},
+		{"c", pr_char},
+	};
 	int i;
 	int j = 0;
 	int counter = 0;
@@ -31,7 +30,7 @@ int _printf(const char *format, ...)
 			}
 			while (ops[j].op) /**chequea las posc de la estr y recorre*/
 			{
-				if (ops[j].op == format[i + 1])
+				if (*ops[j].op == format[i + 1])
 				{
 					counter += ops[j].f(all);
 					i += 2;
@@ -44,5 +43,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(all);
-	return (i);
+	return (counter);
 }

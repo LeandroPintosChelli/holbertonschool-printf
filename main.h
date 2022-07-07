@@ -11,7 +11,7 @@ int pr_str(va_list all);
 int pr_char(va_list all);
 typedef struct op
 {
-	char op;
+	char *op;
 	int (*f)(va_list all);
 } op_t;
 #endif

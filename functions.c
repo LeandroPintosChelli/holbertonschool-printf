@@ -11,8 +11,25 @@ int prin(void)
 */
 int pr_str(va_list all)
 {
-	_putchar(va_arg(all, int));
-	return (1);
+	int q;
+	char *t, w[] = "(null)";
+
+	t = va_arg(all, char *);
+	if (w == NULL)
+	{
+		for (q = 0; w[q]; q++)
+		{
+			_putchar(w[q]);
+		}
+	}
+	else
+	{
+		for(q = 0; t[q]; q++)
+		{
+			_putchar(t[q]);
+		}
+	}
+		return (q);
 }
 /**
 * pr_char - print char
@@ -22,6 +39,5 @@ int pr_str(va_list all)
 int pr_char(va_list all)
 {
 	_putchar(va_arg(all, int));
-	_putchar('s');
 	return (1);
 }
