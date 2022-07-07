@@ -7,11 +7,12 @@
 int _printf(const char *format, ...)
 {
 	op_t ops[] = {
-		{"s", pr_str},
 		{"c", pr_char},
+		{"s", pr_str},
+		{"%", printper}
 	};
 	int i;
-	int j = 0;
+	int j;
 	int counter = 0;
 	va_list all;
 
@@ -21,25 +22,35 @@ int _printf(const char *format, ...)
 	va_start(all, format);
 	while (format[i]) /**condicion mientras haya algo en format(recorre)*/
 	{
-		if (format[i] == '%')
+		if (format[i] == '%' && (format[i + 1] == 0 || format[i + 1] == '%'))
 		{
-			if (format[i + 1] == '%')
-			{
-				_putchar('%');
-				counter += 1;
-			}
-			while (ops[j].op) /**chequea las posc de la estr y recorre*/
+			_putchar('%');
+			i++;
+			counter++;
+		}
+		else if (format[i] == '%')
+		{
+			j = 0;
+			while (j < 3) /**chequea las posc de la estr y recorre*/
 			{
 				if (*ops[j].op == format[i + 1])
 				{
 					counter += ops[j].f(all);
-					i += 2;
+					i++;
+					break;
 				}
+				j++;
+			}
+			if (j == 3)
+			{
+				_putchar(format[i]);
+				counter++;
 			}
 		}
 		else
 		{
 			_putchar(format[i]);
+			counter++;
 		}
 	}
 	va_end(all);

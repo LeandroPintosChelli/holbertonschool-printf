@@ -24,7 +24,7 @@ int pr_str(va_list all)
 	}
 	else
 	{
-		for(q = 0; t[q]; q++)
+		for (q = 0; t[q]; q++)
 		{
 			_putchar(t[q]);
 		}

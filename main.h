@@ -9,6 +9,7 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int pr_str(va_list all);
 int pr_char(va_list all);
+int printper(va_list all);
 typedef struct op
 {
 	char *op;
