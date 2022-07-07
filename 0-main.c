@@ -1,7 +1,7 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
-int main(void)
-{
-	_printf("hola mundo");
-	return (0);
+int main() {
+    printf("Hello");
+    return 0;
 }
