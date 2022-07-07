@@ -19,7 +19,7 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(all, format);
-	while (format[i]) /**condicion para que mientras haya algo en format(recorre)*/
+	while (format[i]) /**condicion mientras haya algo en format(recorre)*/
 	{
 		if (format[i] == '%')
 		{
@@ -33,7 +33,7 @@ int _printf(const char *format, ...)
 				if (ops[j].op == format[i + 1])
 				{
 					counter += ops[j].f(all);
-					i += 2; 
+					i += 2;
 				}
 			}
 		}
@@ -43,5 +43,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(all);
-	return (counter);
+	return (all);
 }
