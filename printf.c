@@ -39,7 +39,7 @@ int _printf(const char *format, ...)
 					counter += ops[j].f(all);
 					break;
 				}
-				i++;
+				j++;
 			}
 			if (j == 3)
 			{
