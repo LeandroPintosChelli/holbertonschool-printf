@@ -38,6 +38,12 @@ int _printf(const char *format, ...)
 	va_end(all);
 	return (counter);
 }
+/**
+* _while - function of pr_precent
+* @all: va_list
+* @form: store format
+* Return: amount of prints
+*/
 int _while(va_list all, char form)
 {
 	op_t ops[] = {
