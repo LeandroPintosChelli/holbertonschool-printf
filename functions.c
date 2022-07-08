@@ -46,7 +46,7 @@ int pr_inte(va_list all)
 {
 	int str;
 
-	str = va_arg(all, int)
+	str = va_arg(all, int);
 	if (str == NULL)
 	{
 		printf("%d", str);
