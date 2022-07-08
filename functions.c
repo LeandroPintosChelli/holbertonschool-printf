@@ -44,8 +44,12 @@ int pr_char(va_list all)
 */
 int pr_inte(va_list all)
 {
-	
-	printf("%d", va_arg(all, int));
+	int str;
+
+	if (str == NULL)
+	{
+		printf("%d", va_arg(all, int));
+	}
 	return(1);
 }
 /**
