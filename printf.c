@@ -50,7 +50,7 @@ int _while(va_list all, char form)
 		{"c", pr_char},
 		{"s", pr_str},
 		{"d", pr_inte},
-		{"i", pr_int}
+		{"i", pr_inte}
 	};
 	int j = 0;
 
