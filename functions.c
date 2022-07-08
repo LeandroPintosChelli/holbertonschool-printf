@@ -42,7 +42,7 @@ int pr_char(va_list all)
 * @all: variadic list
 *
 */
-int pr_int(va_list all);
+int pr_int(unsigned int n);
 /**
 * print_number - check code
 * @n: print number
