@@ -47,7 +47,7 @@ int pr_inte(va_list all)
 	int st;
 	char *str;
 
-	str = va_arg(all, int);
+	str = va_arg(all, char *);
 	if (str == NULL)
 	{
 		for (st = 0; str[st]; st++);
