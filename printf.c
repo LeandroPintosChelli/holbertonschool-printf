@@ -73,7 +73,6 @@ int _while(va_list all, char form)
 int pr_inte(va_list all, char decimal)
 {
 	int st = 0;
-	char *str;
 
 	while (st < 4)
 	{
