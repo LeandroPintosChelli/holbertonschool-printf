@@ -37,3 +37,23 @@ int pr_char(va_list all)
 	_putchar(va_arg(all, int));
 	return (1);
 }
+/**
+* pr_inte - print decimal
+* @all: variadic list
+* Return: 1
+*/
+int pr_inte(va_list all)
+{
+	_putchar(va_arg(all, int));
+	return(1);
+}
+/**
+* pr_int - print decimal
+* @all: variadic list
+*
+*/
+int pr_int(va_list all)
+{
+	_putchar(va_arg(all, int))
+	return(1):
+}

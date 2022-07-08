@@ -48,7 +48,9 @@ int _while(va_list all, char form)
 {
 	op_t ops[] = {
 		{"c", pr_char},
-		{"s", pr_str}
+		{"s", pr_str},
+		{"d", pr_inte},
+		{"i", pr_int}
 	};
 	int j = 0;
 
