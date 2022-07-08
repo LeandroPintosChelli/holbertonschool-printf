@@ -67,9 +67,11 @@ int pr_inte(va_list all)
 */
 int pr_int(unsigned int n)
 {
+	int c;
+
 	if (n / 10 != 0)
 	{
-		pr_int(n / 10);
+		c = pr_int(n / 10);
 	}
 	return (_putchar((n % 10) + '0'));
 }
