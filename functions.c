@@ -46,9 +46,10 @@ int pr_inte(va_list all)
 {
 	int str;
 
+	str = va_arg(all, int)
 	if (str == NULL)
 	{
-		printf("%d", va_arg(all, int));
+		printf("%d", str);
 	}
 	return(1);
 }
