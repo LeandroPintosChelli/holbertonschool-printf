@@ -38,26 +38,6 @@ int pr_char(va_list all)
 	return (1);
 }
 /**
-* pr_inte - print decimal
-* @all: variadic list
-* Return: 1
-*/
-int pr_inte(va_list all)
-{
-	int st;
-	char *str;
-
-	str = va_arg(all, char *);
-	if (str == NULL)
-	{
-		for (st = 0; str[st]; st++)
-		{
-			_putchar(str[st]);
-		}
-	}
-	return(st);
-}
-/**
 * pr_int - print decimal
 * @all: variadic list
 *
