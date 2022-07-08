@@ -54,7 +54,7 @@ int _while(va_list all, char form)
 	};
 	int j = 0;
 
-	while (j < 2) /**chequea las posc de la estr y recorre*/
+	while (j < 4) /**chequea las posc de la estr y recorre*/
 	{
 		if (*ops[j].op == form)
 		{
