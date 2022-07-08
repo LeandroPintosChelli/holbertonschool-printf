@@ -44,7 +44,8 @@ int pr_char(va_list all)
 */
 int pr_inte(va_list all)
 {
-	_putchar(va_arg(all, int));
+	
+	printf("%d", va_arg(all, int));
 	return(1);
 }
 /**
