@@ -54,6 +54,6 @@ int pr_inte(va_list all)
 */
 int pr_int(va_list all)
 {
-	_putchar(va_arg(all, int))
-	return(1):
+	_putchar(va_arg(all, int));
+	return(1);
 }
