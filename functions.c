@@ -67,7 +67,7 @@ int pr_inte(va_list all)
 */
 int pr_int(unsigned int n)
 {
-	int c;
+	int c = 0;
 
 	if (n / 10 != 0)
 	{
