@@ -49,7 +49,8 @@ int pr_int(va_list all);
 */
 int pr_inte(va_list all)
 {
-	int decimal = va_arg(all, int)
+	int decimal = va_arg(all, int);
+
 	if (decimal < 0)
 	{
 		_putchar('-');
