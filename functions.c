@@ -54,7 +54,7 @@ int pr_inte(va_list all)
 	if (decimal < 0)
 	{
 		_putchar('-');
-		return(pr_int(-decimal) + 1);
+		return(pr_int(-decimal + 1));
 	}
 	else
 	{
