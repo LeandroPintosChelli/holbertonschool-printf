@@ -42,8 +42,39 @@ int pr_char(va_list all)
 * @all: variadic list
 *
 */
-int pr_int(va_list all)
+int pr_int(va_list all);
+/**
+* print_number - check code
+* @n: print number
+*/
+int pr_inte(va_list all)
 {
-	_putchar(va_arg(all, int));
-	return(1);
+	int decimal = va_arg(all, int)
+	if (decimal < 0)
+	{
+		_putchar('-');
+		return(pr_int(-decimal) + 1);
+	}
+	else
+	{
+		return (pr_int(decimal));
+	}
+}
+/**
+* _numbers - print numbers
+* @n: enteros
+*/
+int pr_int(unsigned int n)
+{
+	int c = 0;
+
+	if (n / 10 != 0)
+	{
+		pr(n / 10);
+	}
+	_putchar((n % 10) + '0');
+	{
+		return (pr_inte)
+	}
+	c++;
 }

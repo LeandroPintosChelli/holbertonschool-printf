@@ -65,22 +65,4 @@ int _while(va_list all, char form)
 	_putchar('%');
 	_putchar(form);
 	return (2);
-}
-/**
-*
-*
-*/
-int pr_inte(va_list all, char *decimal)
-{
-	int st = 0;
-
-	while (st < 4)
-	{
-		if (*ops[st].op == decimal)
-		{
-			return (ops[st].op(all));
-		}
-		st++;
-	}
-	_putchar("%d", st);
-}
+}	
