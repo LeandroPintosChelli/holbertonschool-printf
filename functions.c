@@ -50,7 +50,7 @@ int pr_inte(va_list all)
 	str = va_arg(all, char *);
 	if (str == NULL)
 	{
-		for (st = 0; str[st]; st++);
+		for (st = 0; str[st]; st++)
 		{
 			_putchar(str[st]);
 		}
