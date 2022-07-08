@@ -73,5 +73,5 @@ int pr_int(unsigned int n)
 	{
 		c = pr_int(n / 10);
 	}
-	return (_putchar((n % 10) + '0'));
+	return (_putchar((n % 10) + '0') + c);
 }
