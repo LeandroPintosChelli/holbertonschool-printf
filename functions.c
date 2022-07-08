@@ -54,7 +54,7 @@ int pr_inte(va_list all)
 	if (decimal < 0)
 	{
 		_putchar('-');
-		return(pr_int(-decimal + 1));
+		return(pr_int(-decimal) + 1);
 	}
 	else
 	{
@@ -75,7 +75,7 @@ int pr_int(unsigned int n)
 	}
 	_putchar((n % 10) + '0');
 	{
-		return (pr_inte)
+		return (pr_inte);
 	}
 	c++;
 }
