@@ -44,14 +44,18 @@ int pr_char(va_list all)
 */
 int pr_inte(va_list all)
 {
-	int str;
+	int st;
+	char *str;
 
 	str = va_arg(all, int);
 	if (str == NULL)
 	{
-		printf("%d", str);
+		for (st = 0; str[st]; st++);
+		{
+			_putchar(str[st]);
+		}
 	}
-	return(1);
+	return(st);
 }
 /**
 * pr_int - print decimal
