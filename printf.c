@@ -14,7 +14,7 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(all, format);
-	while (format[i]) /**condicion mientras haya algo en format(recorre)*/
+	while (format[i])
 	{
 		if (format[i] == '%' && format[i + 1] == 0)
 		{
@@ -54,7 +54,7 @@ int _while(va_list all, char form)
 	};
 	int j = 0;
 
-	while (j < 4) /**chequea las posc de la estr y recorre*/
+	while (j < 4)
 	{
 		if (*ops[j].op == form)
 		{
