@@ -41,5 +41,7 @@ Example 2:
 	}
 In this example printf write in the standard output "Mi name is Pepe" and continue in the next line, for this we use "\n".
 
-FLOWCHART	
+FLOWCHART
+
+
 ![printfc flowchart drawio](https://user-images.githubusercontent.com/86613539/178302067-7711f512-b051-4d16-8468-37e2f8f34e5a.png)
