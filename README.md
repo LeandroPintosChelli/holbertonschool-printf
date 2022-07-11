@@ -41,4 +41,4 @@ Example 2:
 	}
 In this example printf write in the standard output "Mi name is Pepe" and continue in the next line, for this we use "\n".
 
-'/c/Users/admin/Desktop/printfc flowchart.drawio.png'
+FLOWCHART	
